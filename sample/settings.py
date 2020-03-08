@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'backlog.apps.BacklogConfig',   # backlog アプリケーション
-    'bootstrap4',           # django-bootstrap4
 ]
 
 MIDDLEWARE = [
