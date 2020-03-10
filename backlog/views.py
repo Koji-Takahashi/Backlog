@@ -14,6 +14,7 @@ def issue_list(request):
         issuebyname = Issue.objects.filter(name=name)
         for issue in issuebyname:
             issue.summary = issue.summary[:12]
+            issue.elapsedTime = issue.elapsedTime[:5]
         issues.append(issuebyname)
 
     return render(request,
