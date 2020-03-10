@@ -6,7 +6,7 @@
 <div class="">
   <img src="{% static 'backlog/img/smileinit.png' %}" class="img-fluid" width="50pt">
   <img src="{% static 'backlog/img/logo.png' %}" class="img-fluid" width="100pt">
-  <h4> 処理中タスク</h4>
+  <div><h4> 処理中タスク</h4><h6>更新時刻:{{ issues.0.0.modificationTimeStamp }}</h6></div>
 </div>
 <div class="row">
 {% for issuebyname in issues %}
